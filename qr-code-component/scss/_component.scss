@@ -1,0 +1,37 @@
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 18px);
+
+  &__container {
+    width: 320px;
+    background: var(--white);
+    padding: 16px 16px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+
+    img {
+      border-radius: 10px;
+    }
+
+    h1 {
+      padding: 24px 18px 18px 18px;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      color: var(--dark-blue);
+    }
+
+    p {
+      padding: 0 16px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      color: var(--grayish-blue);
+    }
+  }
+}
+
