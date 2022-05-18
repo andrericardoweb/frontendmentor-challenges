@@ -37,7 +37,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 18px);
+  height: 100vh;
+  position: relative;
 }
 
 .component__container {
@@ -76,6 +77,10 @@ img {
   font-size: 11px;
   text-align: center;
   padding-bottom: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin: 0 auto;
 }
 
 .attribution a {

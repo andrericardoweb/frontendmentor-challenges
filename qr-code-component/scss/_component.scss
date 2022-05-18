@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 18px);
+  height: 100vh;
+  position: relative;
 
   &__container {
     width: 320px;
