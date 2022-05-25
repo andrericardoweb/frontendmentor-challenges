@@ -20,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [andrericardo.dev](https://www.your-site.com)
+- Website - [andrericardo.dev](https://www.andrericardo.dev)
 - Frontend Mentor - [@andrericardoweb](https://www.frontendmentor.io/profile/andrericardoweb)
 - Linkedin - [@andrericardodev](https://www.linkedin.com/in/andrericardodev/)
 - Instagram - [@andrericardo.dev](https://www.instagram.com/andrericardo.dev/)
