@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mosyle - Frontend Challenge</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__profile">Sarah | Session expires in: 00:12</div>
+
+      <div class="header__buttons">
+        <div>
+          <a href="#" class="header__buttons__item">
+            <img src="./assets/images/gear-solid.svg" alt="Settings" />
+            <p>Settings</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#" class="header__buttons__item">
+            <img src="./assets/images/power-off-solid.svg" alt="Logout" />
+            <p>Logout</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="card">
+        <!-- card 1 -->
+        <div class="card__item">
+          <div class="card__item__top card-color01-top">
+            <div class="card__item__top__icon">
+              <img src="./assets/images/devices-icon.svg" alt="" />
+            </div>
+            <div class="card__item__top__number">
+              <img src="./assets/images/sync_icon.svg" alt="" />
+              5
+            </div>
+          </div>
+          <div class="card__item__bottom card-color01-bottom">Devices</div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card__item">
+          <div class="card__item__top card-color02-top">
+            <div class="card__item__top__icon">
+              <img src="./assets/images/list-icon.svg" alt="" />
+            </div>
+            <div class="card__item__top__number">
+              <img src="./assets/images/sync_icon.svg" alt="" />
+              44
+            </div>
+          </div>
+          <div class="card__item__bottom card-color02-bottom">
+            Pending commands
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card__item">
+          <div class="card__item__top card-color03-top">
+            <div class="card__item__top__icon">
+              <img src="./assets/images/warning-icon.svg" alt="" />
+            </div>
+            <div class="card__item__top__number">
+              <img src="./assets/images/sync_icon.svg" alt="" />
+              0
+            </div>
+          </div>
+          <div class="card__item__bottom card-color03-bottom">
+            Failed commands
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="card__item">
+          <div class="card__item__top card-color04-top">
+            <div class="card__item__top__icon">
+              <img src="./assets/images/credit_card_icon.svg" alt="" />
+            </div>
+            <div class="card__item__top__number">Trial</div>
+          </div>
+          <div class="card__item__bottom card-color04-bottom">12/31/2022</div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="card__item">
+          <div class="card__item__top card-color05-top">
+            <div class="card__item__top__icon">
+              <img src="./assets/images/wifi_tethering_icon.svg" alt="" />
+            </div>
+            <div class="card__item__top__number">Push active</div>
+          </div>
+          <div class="card__item__bottom card-color05-bottom">
+            Expiration: 02/17/2023
+          </div>
+        </div>
+      </section>
+
+      <section class="info-line-1">
+        <!--DEVICE SCOUT SCORE-->
+        <div class="info-card">
+          <h2 class="title-vertical title-bg-gray">DEVICE SCOUT SCORE</h2>
+          <div class="card-device-scoute-score">
+            <div class="title">Your Devices</div>
+            <div class="see-more">See more</div>
+            <div class="title">All Scholls</div>
+            <div class="your-devices">
+              <div class="your-devices-item">
+                <h4>CURRENT</h4>
+                <p class="date">07:11 PM - 04/17/2022</p>
+                <p class="number-current">286</p>
+              </div>
+              <div class="your-devices-item arrowback">
+                <img src="/assets/images/arrow_left_icon.svg" />
+              </div>
+              <div class="your-devices-item see-more-divisor">
+                <h4>PREVIOUS</h4>
+                <p class="date">04/17/2022</p>
+                <p class="number-previous">545</p>
+              </div>
+            </div>
+            <div class="seemore-divisor"></div>
+            <div class="your-devices">
+              <div class="your-devices-item">
+                <h4>CURRENT</h4>
+                <p class="date">04/17/2022</p>
+                <p class="number-current">286</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h2 class="title-vertical title-bg-blue">SENT COMMANDS</h2>
+          <div class="graph-card">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="info-line-2">
+        <div class="info-card">
+          <div class="title-horizontal title-bg-violet">
+            <h2>LAST COMMANDS APPLIED BY TEACHERS</h2>
+          </div>
+
+          <div class="content-with-scroll last-commands-container alert-container">
+            
+            <div class="grid-last-commands">              
+              <img src="./assets/images/bill-gates.jpg" />
+              <div class="last-commands-info">
+                <p>Guilherme Andrade started a class</p>
+                <p> <span>Period 1</span> - Tests </p>
+                <small>5 days ago</small>
+              </div>           
+            </div>
+
+            <div class="grid-last-commands">              
+              <img src="./assets/images/steve-jobs.jpg" />
+              <div class="last-commands-info">
+                <p>Tales Melo applied Heads Up!</p>
+                <p><span>Class 1</span> - Development </p>
+                <small>27 days ago</small>
+              </div>           
+            </div>
+
+            <div class="grid-last-commands">              
+              <img src="./assets/images/bill-gates.jpg" />
+              <div class="last-commands-info">
+                <p>Helena Silva started a class</p>
+                <p><span>Class 1</span> - Development </p>
+                <small>27 days ago</small>
+              </div>           
+            </div>
+
+            <div class="grid-last-commands">              
+              <img src="./assets/images/bill-gates.jpg" />
+              <div class="last-commands-info">
+                <p>Guilherme Andrade started a class</p>
+                <p> <span>Period 1</span> - Tests </p>
+                <small>5 days ago</small>
+              </div>           
+            </div>
+
+            <div class="grid-last-commands">              
+              <img src="./assets/images/steve-jobs.jpg" />
+              <div class="last-commands-info">
+                <p>Tales Melo applied Heads Up!</p>
+                <p><span>Class 1</span> - Development </p>
+                <small>27 days ago</small>
+              </div>           
+            </div>
+
+            <div class="grid-last-commands">              
+              <img src="./assets/images/bill-gates.jpg" />
+              <div class="last-commands-info">
+                <p>Helena Silva started a class</p>
+                <p><span>Class 1</span> - Development </p>
+                <small>27 days ago</small>
+              </div>           
+            </div>
+
+          </div>
+          
+          
+        </div>
+        
+        <div class="info-card">
+          <div class="title-horizontal title-bg-gray-dark">
+            <h2>ALERTS</h2>
+            <h2>SEE MORE</h2>
+          </div>
+          <div class="content-with-scroll alert-container">
+            <div class="grid-alert-content">              
+                <img src="./assets/images/mdm-removed.jpg" />
+                <p class="alert-content-title">MDM profile removed</p>
+                <p class="alert-content-number">3</p>              
+            </div>
+            <div class="grid-alert-content">              
+              <img src="./assets/images/no-connection.jpg" />
+              <p class="alert-content-title">No connection</p>
+              <p class="alert-content-number">2</p>              
+            </div>
+            <div class="grid-alert-content">              
+              <img src="./assets/images/teachers.jpg" />
+              <p class="alert-content-title">Teachers without classes</p>
+              <p class="alert-content-number">2</p>              
+            </div>
+            <div class="grid-alert-content">              
+              <img src="./assets/images/apps-and-books.jpg" />
+              <p class="alert-content-title">Apps and Books licenses almost full</p>
+              <p class="alert-content-number">1</p>              
+            </div>
+            <div class="grid-alert-content">              
+              <img src="./assets/images/location-enabled.jpg" />
+              <p class="alert-content-title">Devices without "Location" enabled</p>
+              <p class="alert-content-number">1</p>              
+            </div>
+          </div>          
+        </div>
+
+      </section>
+    </main>
+
+    <nav class="nav">
+      <a href="#" class="nav__select-menu">
+        <img
+          class="nav__select__img"
+          src="./assets/images/ios-ipados.png"
+          alt="Dashboard Icon"
+        />
+        <div class="nav__select__name">
+          <span>iOS / iPadOS</span>
+          <img src="./assets/images/arrow_drop_down_icon.svg" alt="" />
+        </div>
+      </a>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item nav__item__active">
+            <a href="#" class="nav__link">
+              <img
+                src="./assets/images/dashboard_icon.svg"
+                alt="Dashboard Icon"
+              />
+              <span class="nav__name">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                src="./assets/images/business_icon.svg"
+                alt="My School Icon"
+              />
+              <span class="nav__name">MySchool</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                src="./assets/images/display_settings_icon.svg"
+                alt="Management Icon"
+              />
+              <span class="nav__name">Management</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./assets/images/shield_icon.svg" alt="Security Icon" />
+              <span class="nav__name">Security</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                src="./assets/images/globe_icon.svg"
+                alt="DNS Filtering Icon"
+              />
+              <span class="nav__name">DNS Filtering</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                src="./assets/images/school_icon.svg"
+                alt="Class Manager Icon"
+              />
+              <span class="nav__name">Class Manager</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img
+                src="./assets/images/preferences_icon.svg"
+                alt="Dashboard Icon"
+              />
+              <span class="nav__name">Preferences</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__item__end">
+        <a href="#" class="nav__link">
+          <img src="./assets/images/support_icon.svg  " alt="Dashboard Icon" />
+          <span class="nav__name__end">Support</span>
+        </a>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
